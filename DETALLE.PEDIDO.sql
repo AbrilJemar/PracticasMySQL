@@ -30,57 +30,58 @@ SELECT * FROM productos WHERE id_product = 2;
               
               
 UPDATE productos
-		SET unidades_stock = unidades_stock-4 
-		WHERE id_product = 2;
+	SET unidades_stock = unidades_stock-4 
+	WHERE id_product = 2;
+	
+SELECT * FROM productos WHERE id_product = 2;
          
 UPDATE productos
-		SET unidades_stock = unidades_stock-2 
-		WHERE id_product = 5;
+	SET unidades_stock = unidades_stock-2 
+	WHERE id_product = 5;
 
  UPDATE productos
 	SET unidades_stock = unidades_stock-10
-    WHERE id_product = 30;
+    	WHERE id_product = 30;
     
  UPDATE productos
 	SET unidades_stock = unidades_stock-1
-    WHERE id_product = 10;
+    	WHERE id_product = 10;
     
  UPDATE productos
 	SET unidades_stock = unidades_stock-3
-    WHERE id_product = 1;
+    	WHERE id_product = 1;
     
  UPDATE productos
 	SET unidades_stock = unidades_stock-8
-    WHERE id_product = 11;
+    	WHERE id_product = 11;
     
  UPDATE productos
 	SET unidades_stock = unidades_stock-7
-    WHERE id_product = 9;
+    	WHERE id_product = 9;
     
  UPDATE productos
 	SET unidades_stock = unidades_stock-2
-    WHERE id_product = 20;
+    	WHERE id_product = 20;
     
  UPDATE productos
 	SET unidades_stock = unidades_stock-20
-    WHERE id_product = 3;
+    	WHERE id_product = 3;
     
  UPDATE productos
 	SET unidades_stock = unidades_stock-3
-    WHERE id_product = 22;
+   	WHERE id_product = 22;
     
  UPDATE productos
 	SET unidades_stock = unidades_stock-4
-    WHERE id_product = 31;
+    	WHERE id_product = 31;
     
  UPDATE productos
 	SET unidades_stock = unidades_stock-90
-    WHERE id_product = 7;
+    	WHERE id_product = 7;
     
  UPDATE productos
 	SET unidades_stock = unidades_stock-4
-    WHERE id_product = 27;
-SELECT * FROM productos WHERE id_product = 2;
+    	WHERE id_product = 27;
 
 
 SELECT * FROM detalle_pedidos WHERE id_pedido = 1;
@@ -88,4 +89,3 @@ SELECT * FROM detalle_pedidos WHERE id_pedido = 3;
 SELECT * FROM detalle_pedidos WHERE id_pedido = 4;
 SELECT * FROM detalle_pedidos WHERE id_pedido = 6;
 
-SELECT * FROM detalle_pedidos WHERE id_pedido = 2;
