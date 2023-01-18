@@ -1,10 +1,10 @@
 CREATE TABLE cliente (
 	DNI int(8),
-    nombre varchar(50),
-    apellido varchar(50),
+    	nombre varchar(50),
+    	apellido varchar(50),
 	telefono varchar(20),
-    fecha_naci date, -- DATE en formato 'YYYY-MM-DD'
-    PRIMARY KEY (DNI)
+    	fecha_naci date, -- DATE en formato 'YYYY-MM-DD'
+    	PRIMARY KEY (DNI)
 );
 
 ALTER TABLE cliente MODIFY COLUMN dni int; -- no necesito darle una cantidad de numeros para ahorrar memoria, eso se hace solo en varchar
