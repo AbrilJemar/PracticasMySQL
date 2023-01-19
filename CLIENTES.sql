@@ -3,7 +3,7 @@ CREATE TABLE cliente (
     	nombre varchar(50),
     	apellido varchar(50),
 	telefono varchar(20),
-    	fecha_naci date, -- DATE en formato 'YYYY-MM-DD'
+	fecha_naci date, -- DATE en formato 'YYYY-MM-DD'
     	PRIMARY KEY (DNI)
 );
 
@@ -18,7 +18,6 @@ ALTER TABLE cliente RENAME COLUMN nro_cliente TO id_cliente;
 RENAME TABLE cliente TO clientes;
 
 ALTER TABLE clientes ADD domicilio varchar(100);
-SELECT * FROM clientes;
 
 INSERT INTO clientes (dni, nombre, apellido, telefono, fecha_naci, domicilio) 
 	values 
