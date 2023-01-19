@@ -1,16 +1,16 @@
 CREATE TABLE detalle_pedidos (
 	id_pedido int,
-    id_product int,
-    cantidad_produ int,
+    	id_product int,
+    	cantidad_produ int,
     
-    FOREIGN KEY (id_pedido) REFERENCES pedidos(id_pedido),
+    	FOREIGN KEY (id_pedido) REFERENCES pedidos(id_pedido),
 	FOREIGN KEY (id_product) REFERENCES productos(id_product),
-    CONSTRAINT pedido_product PRIMARY KEY (id_pedido, id_product)
+    	CONSTRAINT pedido_product PRIMARY KEY (id_pedido, id_product)
     );
     
     
     INSERT INTO detalle_pedidos (id_pedido, id_product, cantidad_produ)
-		VALUES
+	VALUES
         (1, 2, 4),
         (1, 5, 2),
         (1, 30, 10),
@@ -25,8 +25,7 @@ CREATE TABLE detalle_pedidos (
         (5, 7, 90),
         (2, 27, 4);
 	
-SELECT * FROM productos;        
-SELECT * FROM productos WHERE id_product = 2;
+SELECT * FROM productos;       
               
               
 UPDATE productos
@@ -83,9 +82,7 @@ UPDATE productos
 	SET unidades_stock = unidades_stock-4
     	WHERE id_product = 27;
 
-
-SELECT * FROM detalle_pedidos WHERE id_pedido = 1;
-SELECT * FROM detalle_pedidos WHERE id_pedido = 3;
-SELECT * FROM detalle_pedidos WHERE id_pedido = 4;
-SELECT * FROM detalle_pedidos WHERE id_pedido = 6;
+SELECT productos.id_product, productos.nombre, detalle_pedidos.cantidad_produ FROM productos INNER JOIN detalle_pedidos ON productos.id_product = detalle_pedidos.id_product WHERE detalle_pedidos.id_pedido = 2;
+SELECT productos.id_product, productos.nombre, detalle_pedidos.cantidad_produ FROM productos INNER JOIN detalle_pedidos ON productos.id_product = detalle_pedidos.id_product WHERE detalle_pedidos.id_pedido = 3;
+SELECT productos.id_product, productos.nombre, detalle_pedidos.cantidad_produ FROM productos INNER JOIN detalle_pedidos ON productos.id_product = detalle_pedidos.id_product WHERE detalle_pedidos.id_pedido = 6;
 
